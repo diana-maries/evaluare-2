@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Maries Diana</title>
+<link rel="stylesheet" type="text/css" href="CSS.css" />
+<script>
+function schimbare()
+{
+	var x=document.getElementsByClassName("slideshow-container");
+	var y=document.getElementsByClassName("poze");
+	var currDisplay = x[0].style.display;
+	
+	
+	y[0].style.display = "none"
+	x[0].style.display = "block"
+	
+
+
+}
+</script>
+</head>
+<body>
+
+<h1>Maries Diana</h1>
+<a href="https://www.google.com/search?q=gmail&oq=gma&aqs=chrome.0.0i131i433j69i57j0i131i433j0j0i433l2j69i61l2.2638j0j7&sourceid=chrome&ie=UTF-8">Maries.Ra.Diana@utcluj.didatec.ro</a>
+</br>
+</br>
+<p>Specificatii tehnice ale statiei principale de lucru</p>
+<table>
+<tr>
+<td>Denumire componenta</td>
+<td>Parametri</td>
+<td>Producător</td>
+</tr>
+
+  <tr>
+    <td>CPU</th>
+    <td>
+	<ul>
+  <li>6 nuclee</li>
+  <li>Frecventa de baza 2.60 GHz</li>
+  <li>Frecenta maxima dupa accelerare 5.00 GHz</li>
+  <li>Bus speed 8 GT/s</li>
+</ul>
+</th>
+	 <td>Intel</td>
+    
+  </tr>
+  <tr>
+    <td>Placa video</td>
+    <td>
+	<ul><li>RTX-OPS 37T</li>
+  <li>Frecventa Boost 1680 MHz</li>
+  <li>Viteza memoriei 14 Gbps</li>
+  <li>Ray-tracing in timp real</li>
+  </ul>
+  </td>
+	 <td>Nvidia</td>
+  </tr>
+  <tr>
+    <td>Memorie ram</td>
+    <td>
+	<ul><li>Tip memorie DDR4</li>
+  <li>Capacitate 8 GB</li>
+  <li>Frecventa 2666 HHz</li>
+  <li>Module Single Channel</li>
+  </ul>
+	</td>
+	 <td>Intel</td>
+  </tr>
+</table>
+<div class="nume">
+<p>Structura retelei personale si accesul la internet</p>
+<img id="poza1" src="img1.png">
+<p>Caracterisiticile conexiunii la retea</p>
+<ol>
+  <li>Adresa MAC</li>
+  <li>Adresa IP</li>
+  <li>Debit la download</li>
+  <li>Debit la upload</li>
+</ol>
+</div>
+</br>
+
+<p ondblclick="schimbare()">Utilizarea resurselor</p>
+<div class="poze">
+<table id="tabel">
+<tr>
+<td id="tabel"> <img src="img2.png" style="width:200p"  ></td>
+<td id="tabel"> <img src="img3.png" style="width:200p"  ></td>
+<td id="tabel"> <img src="img4.png" style="width:200p"  ></td>
+</tr>
+</table>
+</div>
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  
+  <img src="img2.png" >
+ 
+</div>
+
+<div class="mySlides fade">
+  <img src="img3.png" >
+ 
+</div>
+
+<div class="mySlides fade">
+  <img src="img4.png" >
+  
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); 
+}
+</script>
+</body>
+</html>
